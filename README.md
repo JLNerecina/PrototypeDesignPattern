@@ -43,9 +43,9 @@ The **Prototype Pattern** is a creational design pattern that solves the problem
 
 ```
 ┌─────────────────────────────────────────────────────┐
-│                  Prototype Pattern                   │
+│                  Prototype Pattern                  │
 ├─────────────────────────────────────────────────────┤
-│                                                       │
+│                                                     │
 │  ┌──────────────────────────────────────────────┐   │
 │  │ <<interface>> Animal (Cloneable)             │   │
 │  ├──────────────────────────────────────────────┤   │
@@ -53,13 +53,13 @@ The **Prototype Pattern** is a creational design pattern that solves the problem
 │  │ + makeSound(): void                          │   │
 │  │ + getType(): String                          │   │
 │  └──────────────────────────────────────────────┘   │
-│           △         △         △                      │
-│           │         │         │                      │
-│    ┌──────┴─┐  ┌────┴──┐  ┌──┴──────┐              │
-│    │ Sheep  │  │  Cow  │  │ Horse   │              │
-│    │ (clone)│  │(clone)│  │ (clone) │              │
-│    └────────┘  └───────┘  └─────────┘              │
-│                                                       │
+│           △        △         △                    │
+│           │         │         │                     │
+│    ┌──────┴─┐  ┌────┴──┐  ┌───┴─────┐               │
+│    │ Sheep  │  │  Cow  │  │ Horse   │               │
+│    │ (clone)│  │(clone)│  │ (clone) │               │
+│    └────────┘  └───────┘  └─────────┘               │
+│                                                     │
 │  ┌──────────────────────────────────────────────┐   │
 │  │ AnimalRegistry (Prototype Manager)           │   │
 │  ├──────────────────────────────────────────────┤   │
@@ -71,7 +71,7 @@ The **Prototype Pattern** is a creational design pattern that solves the problem
 │  │ + createCow(): Animal                        │   │
 │  │ + createHorse(): Animal                      │   │
 │  └──────────────────────────────────────────────┘   │
-│                                                       │
+│                                                     │
 └─────────────────────────────────────────────────────┘
 ```
 
